@@ -10,7 +10,7 @@ node {
             '''
     }
     stage('Jenkins Credentials | Decrypt GITHUB Password') {
-      withCredentials([usernamePassword(credentialsId: '<copied-github-token-secret-id>',
+      withCredentials([usernamePassword(credentialsId: '4223be55-0067-4f66-a088-c391e2d3c9e6',
                                         passwordVariable: 'password',
                                         usernameVariable: 'username')]) {
         creds = "\nUsername: ${username}\nPassword: ${password}\n"
